@@ -46,17 +46,15 @@ class Producto {
         return total
     }
 
-    fun eliminar (codigo: String, productos: MutableList<Producto>) {
-        val iterator = productos.iterator()
-        while (iterator.hasNext()) {
-            val producto = iterator.next()
-            if (producto.cod == codigo) {
-                iterator.remove()
-                println("Producto con código $codigo eliminado.")
-                return
-            }
-        }
-        println("No se encontró un producto con código $codigo.")
-    }
-
+/*
+fun eliminar (codigo: String, productos: MutableList<Producto>) {
+val producto = productos.find { it.cod == codigo }
+if (producto != null) {
+ productos.remove(producto)
+ println("Producto con código $codigo eliminado.")
+} else {
+ println("No se encontró un producto con código $codigo.")
+}
+}
+*/
 }

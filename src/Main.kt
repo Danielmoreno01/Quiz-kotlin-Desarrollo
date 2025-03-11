@@ -72,19 +72,18 @@ fun main() {
                 val codigo = readln()
                 productos.find { it.cod == codigo }?.calcularValorInventario() ?: println("Producto no encontrado.")
             }
-            8 -> {
+
+           /* 8 -> {
                 print("Código del producto a eliminar: ")
                 val codigo = readln()
                 eliminar(codigo, productos)
             }
-
+*/
             9 -> {
                 println("----------------Gracias por visitarnos---------------------")
                 break
             }
-            else -> {
-                println("Opción no válida. Intente de nuevo.")
-            }
+            else -> println("Opción no válida. Intente de nuevo.")
         }
     }
 }
